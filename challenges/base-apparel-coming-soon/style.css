@@ -64,6 +64,7 @@ body {
 }
 
 .main .lead {
+  width: 55%;
   margin-top: 20px;
   line-height: 1.8em;
   color: var(--color-desaturated-red);
