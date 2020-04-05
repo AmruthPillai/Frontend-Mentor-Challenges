@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -11,4 +11,8 @@ body {
 
 ul {
   list-style: square;
+}
+
+ul li {
+  margin: 8px 0;
 }
