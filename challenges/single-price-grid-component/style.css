@@ -1,0 +1,151 @@
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%);
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--color-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  background-color: white;
+  margin: 60px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px hsla(218, 22%, 67%, 0.4);
+  align-items: center;
+  grid-template-areas:
+    "join"
+    "sign-up"
+    "why-us";
+}
+
+.join {
+  grid-area: join;
+  padding: 24px;
+}
+
+.join h3 {
+  color: var(--color-cyan);
+}
+
+.join h4 {
+  margin: 20px 0;
+  font-size: 0.95em;
+  color: var(--color-bright-yellow);
+}
+
+.join p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: var(--color-grayish-blue);
+}
+
+.sign-up {
+  grid-area: sign-up;
+  padding: 24px;
+  background-color: var(--color-cyan);
+}
+
+.sign-up h3 {
+  color: white;
+}
+
+.sign-up div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  color: hsl(179, 55%, 58%);
+}
+
+.sign-up div span {
+  font-size: 2em;
+  margin-right: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.sign-up p {
+  color: var(--color-light-gray);
+}
+
+.sign-up button {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-top: 30px;
+  background-color: var(--color-bright-yellow);
+  box-shadow: 0 5px 15px hsla(0, 0%, 10%, 0.15);
+  text-align: center;
+}
+
+.why-us {
+  grid-area: why-us;
+  padding: 24px;
+  background-color: hsl(179, 47%, 52%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.why-us h3 {
+  color: white;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0em;
+  font-size: 14px;
+  color: hsl(184, 69%, 76%);
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 650px;
+    margin: 0;
+    align-items: stretch;
+    grid-template-areas:
+      "join join"
+      "sign-up why-us";
+  }
+
+  .join {
+    padding: 40px;
+  }
+
+  .join h3 {
+    font-size: 1.4em;
+  }
+
+  .join h4 {
+    font-size: 1.1em;
+    margin: 15px 0 10px 0;
+  }
+
+  .join p {
+    font-size: 15px;
+  }
+
+  .sign-up {
+    padding: 40px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .why-us {
+    padding: 40px;
+    border-bottom-left-radius: 0;
+  }
+}
