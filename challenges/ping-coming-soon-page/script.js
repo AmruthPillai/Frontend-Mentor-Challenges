@@ -4,7 +4,7 @@ function validateEmail(email) {
 }
 
 function onSubmit() {
-  var formElem = document.getElementsByTagName("form")[0];
+  var formElem = document.getElementsByClassName("form")[0];
   var emailAddress = document.getElementById("emailAddress").value;
 
   if (validateEmail(emailAddress)) {
