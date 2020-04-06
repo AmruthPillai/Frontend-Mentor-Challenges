@@ -73,12 +73,14 @@ body {
 .main #emailInput {
   position: relative;
   margin-top: 50px;
-  width: 450px;
+  width: 90%;
+  max-width: 500px;
   display: flex;
 }
 
 .main #emailInput input {
-  width: 450px;
+  width: 90%;
+  max-width: 500px;
   height: 56px;
   border: 1px solid var(--color-desaturated-red);
   border-radius: 50px;
@@ -149,7 +151,7 @@ body {
   color: var(--color-soft-red);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr auto 2fr;
@@ -187,14 +189,14 @@ body {
   }
 
   .main #emailInput {
-    width: 300px;
+    width: calc(100vw - 50px);
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .main #emailInput input {
-    width: 300px;
+    width: calc(100vw - 50px);
     height: 50px;
   }
 
@@ -203,7 +205,7 @@ body {
   }
 
   .image {
-    height: 300px;
+    height: 100vw;
     background-position: top left;
   }
 }
