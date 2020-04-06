@@ -93,6 +93,20 @@ body {
   text-align: center;
 }
 
+.sign-up button:hover {
+  cursor: pointer;
+  background-color: hsl(71, 73%, 62%);
+}
+
+.sign-up button:active {
+  cursor: pointer;
+  background-color: hsl(71, 73%, 58%);
+}
+
+.sign-up button:focus {
+  outline: none;
+}
+
 .why-us {
   grid-area: why-us;
   padding: 24px;
